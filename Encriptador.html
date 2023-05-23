@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="javascript.js"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <img src="imagenes/Logo.svg" alt="" class="logo">
+        </header>     
+        <main>
+            <section>
+                <textarea cols="30" rows="10" class="textArea" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="informacion">
+                    <span class="character">&#33</span>
+                    <span>Solo letras minúsculas y sin acento</span>
+                </div>
+                <div class="botonesEncriptadores">
+                    <button id="encriptar" class="btnEncriptar">Encriptar</button><button id="desencriptar" class="btnDesencriptar">Desencriptar</button>
+                </div>
+            </section>
+            <section class="cajaRespuesta">
+                <textarea class="Respuesta" cols="20" rows="10"></textarea>
+            </section>
+            <section class="vinheta">
+                <div>
+                <img src="imagenes/Muñeco.svg" class="munheco">
+                </div>
+                <div class="preMensaje">
+                    <p class="NMFE">Ningun mensaje fue encontrado</p>
+                    <p class="ITDED">Ingrese el texto que desees encriptar o desencriptar</p>    
+                </div>
+                
+            </section>
+            <section>
+                <button class="copiarText">Copiar</button>
+            </section>
+        </main>
+        
+        <footer>
+
+        </footer>
+    
+    </body>
+    <script>
+        var btn = document.querySelector(".btnEncriptar");
+        btn.onclick = encriptar;
+        var btn2 = document.querySelector(".btnDesencriptar");
+        btn2.onclick = desencriptar
+        var btn3 = document.querySelector(".copiarText");
+        btn3.onclick = copiar;
+
+    </script>
+</html>
